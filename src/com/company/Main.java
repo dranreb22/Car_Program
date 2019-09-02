@@ -24,7 +24,7 @@ interface Engine{
     public void setDriveTrain(String driveTrain);
     public void setEngineType(String fuel);
 }
-public class VehicleChassis implements Chassis {
+class VehicleChassis implements Chassis {
     String chassisName;
 
     public VehicleChassis() {
@@ -35,14 +35,31 @@ public class VehicleChassis implements Chassis {
         chassisName = ChassisName;
     }
 
+    @Override
     public String getChassisType() {
         return chassis;
     }
 
     public void setChassisType(String VehicleChassis){
-         = VehicleChassis;
+
+        chassisName = VehicleChassis;
     }
     public String toString(){
         return chassis;
+    }
+}
+
+class VehicleFrame implements Chassis {
+    String vehicleFrameType;
+
+    public VehicleFrame(){};
+
+    public VehicleFrame(String VehicleFrameType){
+        vehicleFrameType = VehicleFrameType;
+    }
+
+    @Override
+    public String getChassisType() {
+        return null;
     }
 }
