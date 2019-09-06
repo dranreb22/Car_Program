@@ -4,4 +4,5 @@ package com.company;
 interface Feature{
     String getFeature();
     void setFeature(String feature);
+
 }

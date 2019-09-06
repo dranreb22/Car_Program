@@ -5,6 +5,7 @@ public class ExteriorFeature {
     //initializing private String
     private String exteriorFeature;
 
+
     //default constructor with default value of "Generic"
     public ExteriorFeature(){
         exteriorFeature = "Generic";

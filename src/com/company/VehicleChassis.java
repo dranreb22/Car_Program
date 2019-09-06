@@ -7,6 +7,7 @@ class VehicleChassis implements Chassis {
 
     //default constructor that sets chassisNme to equal the value
     //of the variable chassis, which has the value of "Chassis"
+
     public VehicleChassis() {
         this.chassisName = chassis;
     }

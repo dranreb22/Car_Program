@@ -9,6 +9,7 @@ interface Chassis {
     //creating abstract method for get and set chassis type.
     Chassis getChassisType();
 
+
     //setchassistype accepts a String of vehicleChassis
     void setChassisType (String vehicleChassis);
 }

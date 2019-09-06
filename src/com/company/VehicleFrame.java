@@ -11,6 +11,7 @@ class VehicleFrame implements Chassis {
         vehicleFrameType = "Unibody";
     };
 
+
     //overloaded constructor allowing user/Main
     //to assign a value to the object while instantiating it
     public VehicleFrame(String vehicleFrameType){

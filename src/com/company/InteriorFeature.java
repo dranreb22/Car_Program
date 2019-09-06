@@ -15,6 +15,7 @@ public class InteriorFeature {
         this.interiorFeature = interiorFeature;
     }
 
+
     //getter and setter for interiorfeature enabled assignment/reassignment and retrieval of String interiorFeature
     public String getInteriorFeature() {
         return interiorFeature;
