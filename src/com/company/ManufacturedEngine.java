@@ -2,7 +2,11 @@ package com.company;
 
 import java.util.Date;
 
-public class ManufacturedEngine {
+/*creating class Manufactured Engine and implementing the interface Engine
+    which has setters from Engine, as well as defining getters for them.
+ */
+public class ManufacturedEngine implements Engine {
+    //initializing variables defining different aspects of an Engine
     private String engineManufacturer;
     private Date engineManufacturedDate;
     private String engineMake;
@@ -11,6 +15,7 @@ public class ManufacturedEngine {
     private String engineType;
     private String driveTrain;
 
+    //default constructor
     public ManufacturedEngine(){
         this.engineManufacturer = "Generic";
         this.engineManufacturedDate = new Date();
@@ -21,6 +26,7 @@ public class ManufacturedEngine {
         this.driveTrain = "Generic";
     }
 
+    //overloaded constructor
     public ManufacturedEngine(String engineManufacturer, Date engineManufacturedDate, String engineMake,
                               String engineModel, int engineCylinders, String engineType, String driveTrain){
         this.engineManufacturer = engineManufacturer;
@@ -32,10 +38,14 @@ public class ManufacturedEngine {
         this.driveTrain = driveTrain;
     };
 
+    //getters and setters for engine attributes. the override is used because
+    //some some of these methods were
     public String getEngineManufacturer() {
         return engineManufacturer;
     }
 
+
+    @Override
     public void setEngineManufacturer(String engineManufacturer) {
         this.engineManufacturer = engineManufacturer;
     }
@@ -44,6 +54,7 @@ public class ManufacturedEngine {
         return engineManufacturedDate;
     }
 
+    @Override
     public void setEngineManufacturedDate(Date engineManufacturedDate) {
         this.engineManufacturedDate = engineManufacturedDate;
     }
@@ -88,6 +99,7 @@ public class ManufacturedEngine {
         this.driveTrain = driveTrain;
     }
 
+    //overriding default toString to print out the information defined in this function
     @Override
     public String toString() {
         return  "Engine Manufacturer: " + engineManufacturer + "\n"+
