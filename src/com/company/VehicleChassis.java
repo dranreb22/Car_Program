@@ -9,7 +9,7 @@ class VehicleChassis implements Chassis {
     //of the variable chassis, which has the value of "Chassis"
     public VehicleChassis() {
         this.chassisName = chassis;
-    };
+    }
 
     //overloaded constructor allowing Main.java or user to
     //define chassisName
@@ -18,7 +18,7 @@ class VehicleChassis implements Chassis {
         this.chassisName = chassisName;
     }
 
-    //overloading methods from Interface Chassis
+    //overriding methods from Interface Chassis
     @Override
     public Chassis getChassisType() {
         //returning an instance of itself?
@@ -33,7 +33,7 @@ class VehicleChassis implements Chassis {
         this.chassisName = vehicleChassis;
     }
 
-    //overloading this class's default toString method
+    //overriding this class's default toString method
     //to print out the chassis name in
     @Override
     public String toString(){

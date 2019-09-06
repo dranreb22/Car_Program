@@ -43,7 +43,7 @@ public class Vehicle implements Engine, Chassis {
         this.vehicleEngine = vehicleEngine;
     }
 
-    //overloading values from Engine Interface
+    //overriding values from superclass Engine Interface
     //into the vehicleEngine object of Interface Engine
     @Override
     public void setEngineCylinders(int engineCylinders) {
@@ -58,37 +58,37 @@ public class Vehicle implements Engine, Chassis {
     @Override
     public void setEngineManufacturer(String manufacturer){
         vehicleEngine.setEngineManufacturer(manufacturer);
-    };
+    }
 
     @Override
     public void setEngineMake(String engineMake){
         vehicleEngine.setEngineMake(engineMake);
-    };
+    }
 
     @Override
     public void setEngineModel(String engineModel){
         vehicleEngine.setEngineModel(engineModel);
-    };
+    }
 
     @Override
     public void setDriveTrain(String driveTrain){
         vehicleEngine.setDriveTrain(driveTrain);
-    };
+    }
 
     @Override
     public void setEngineType(String fuel){
         vehicleEngine.setEngineType(fuel);
-    };
+    }
 
     @Override
     public Chassis getChassisType(){
         return vehicleFrame;
-    };
+    }
 
     @Override
     public void setChassisType (String vehicleChassis){
         this.vehicleFrame.setChassisType(vehicleChassis);
-    };
+    }
 
     //overloading toString method to include information
     //regarding Vehicles
