@@ -29,13 +29,13 @@ public class Main {
         System.out.println(myInterior + "\n");
         InteriorFeature yourInterior = new InteriorFeature("Climate Control");
         //printing test of object
-        System.out.println(yourInterior);
+        System.out.println(yourInterior + "\n");
 
         ExteriorFeature myExterior = new ExteriorFeature();
         //printing test of object
-        System.out.println(myExterior);
+        System.out.println(myExterior + "\n");
         ExteriorFeature yourExterior = new ExteriorFeature("Fog Lamps");
         //printing test of object
-        System.out.println(yourExterior);
+        System.out.println(yourExterior + "\n");
     }
 }

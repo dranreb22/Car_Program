@@ -18,14 +18,14 @@ public class Vehicle implements Engine, Chassis {
     //default constructor for Vehicle, providing default values
     //for nonspecified variables
     public Vehicle () {
-        this.vehicleManufacturedDate = new Date();
-        this.vehicleManufacturer = "Generic";
-        this.vehicleMake = "Generic";
-        this.vehicleModel = "Generic";
-        this.vehicleFrame = new VehicleFrame();
-        this.vehicleType = "Generic";
-        this.driveTrain = "Generic";
-        this.vehicleEngine = new ManufacturedEngine();
+        vehicleManufacturedDate = new Date();
+        vehicleManufacturer = "Generic";
+        vehicleMake = "Generic";
+        vehicleModel = "Generic";
+        vehicleFrame = new VehicleFrame();
+        vehicleType = "Generic";
+        driveTrain = "Generic";
+        vehicleEngine = new ManufacturedEngine();
     }
 
     //overloaded constructor for Vehicle, allowing user to
