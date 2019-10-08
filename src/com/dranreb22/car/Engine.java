@@ -1,7 +1,10 @@
-package com.company;
+package com.dranreb22.car;
 
 import java.util.Date;
 
+/**
+ * @author Bernard
+ */
 
 //initializing abstract class Engine to define gets and sets
 interface Engine{

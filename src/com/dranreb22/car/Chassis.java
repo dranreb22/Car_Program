@@ -1,5 +1,8 @@
-package com.company;
+package com.dranreb22.car;
 
+/**
+ * @author Bernard
+ */
 //interface definition for the chassis of the car
 interface Chassis {
 

@@ -1,4 +1,4 @@
-package com.company;
+package com.dranreb22.car;
 
 class VehicleChassis implements Chassis {
     //creating private object chassisName of class string

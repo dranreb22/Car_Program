@@ -1,4 +1,4 @@
-package com.company;
+package com.dranreb22.car;
 
 //creating class VehicleFrame and implementing Interface Chassis
 class VehicleFrame implements Chassis {

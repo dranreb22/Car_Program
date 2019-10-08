@@ -1,4 +1,4 @@
-package com.company;
+package com.dranreb22.car;
 
 import java.util.Date;
 
