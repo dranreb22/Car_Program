@@ -4,104 +4,124 @@ import java.util.Date;
 
 //creating class Vehicle and extending the Engine and chassis interfaces
 public class Vehicle implements Engine, Chassis {
-    //initializing String, Date, and Chassis
-    // variables
-    private Date vehicleManufacturedDate;
-    private String vehicleManufacturer;
-    private String vehicleMake;
-    private String vehicleModel;
-    private Chassis vehicleFrame;
-    private String vehicleType;
-    private String driveTrain;
-    private Engine vehicleEngine;
 
-    //default constructor for Vehicle, providing default values
-    //for nonspecified variables
-    public Vehicle () {
-        vehicleManufacturedDate = new Date();
-        vehicleManufacturer = "Generic";
-        vehicleMake = "Generic";
-        vehicleModel = "Generic";
-        vehicleFrame = new VehicleFrame();
-        vehicleType = "Generic";
-        driveTrain = "Generic";
-        vehicleEngine = new ManufacturedEngine();
-    }
+  //initializing String, Date, and Chassis
+  // variables
+  private Date vehicleManufacturedDate;
+  private String vehicleManufacturer;
+  private String vehicleMake;
+  private String vehicleModel;
+  private Chassis vehicleFrame;
+  private String vehicleType;
+  private String driveTrain;
+  private Engine vehicleEngine;
 
-    //overloaded constructor for Vehicle, allowing user to
-    //input chosen values
-    public Vehicle (Date vehicleManufacturedDate, String vehicleManufacturer,
-                    String vehicleMake, String vehicleModel, Chassis vehicleFrame,
-                    String vehicleType, String driveTrain, Engine vehicleEngine){
-        this.vehicleManufacturedDate = vehicleManufacturedDate;
-        this.vehicleManufacturer = vehicleManufacturer;
-        this.vehicleMake = vehicleMake;
-        this.vehicleModel = vehicleModel;
-        this.vehicleFrame = vehicleFrame;
-        this.vehicleType = vehicleType;
-        this.driveTrain = driveTrain;
-        this.vehicleEngine = vehicleEngine;
-    }
+  /**
+   * Default constructor.
+   */
+  //default constructor for Vehicle, providing default values
+  //for nonspecified variables
+  public Vehicle() {
 
-    //overriding values from superclass Engine Interface
-    //into the vehicleEngine object of Interface Engine
-    @Override
-    public void setEngineCylinders(int engineCylinders) {
-        vehicleEngine.setEngineCylinders(engineCylinders);
-    }
+    vehicleManufacturedDate = new Date();
+    vehicleManufacturer = "Generic";
+    vehicleMake = "Generic";
+    vehicleModel = "Generic";
+    vehicleFrame = new VehicleFrame();
+    vehicleType = "Generic";
+    driveTrain = "Generic";
+    vehicleEngine = new ManufacturedEngine();
+  }
 
-    @Override
-    public void setEngineManufacturedDate (Date date){
-        vehicleEngine.setEngineManufacturedDate(date);
-    }
+  /**
+   * Constructor that accepts parameters and places them into the pre-defined variables of this
+   * class.
+   *
+   * @param vehicleManufacturedDate The date the vehicle was manufactured
+   * @param vehicleManufacturer     The manufacturer of the vehicle
+   * @param vehicleMake             The make of the vehicle
+   * @param vehicleModel            The model of the vehicle
+   * @param vehicleFrame            The frame type of the vehicle
+   * @param vehicleType             The type of the vehicle itself
+   * @param driveTrain              The type of drive train
+   * @param vehicleEngine           From class ManufacturedEngine
+   */
+  //overloaded constructor for Vehicle, allowing user to
+  //input chosen values
+  public Vehicle(Date vehicleManufacturedDate, String vehicleManufacturer,
+      String vehicleMake, String vehicleModel, Chassis vehicleFrame,
+      String vehicleType, String driveTrain, Engine vehicleEngine) {
+    this.vehicleManufacturedDate = vehicleManufacturedDate;
+    this.vehicleManufacturer = vehicleManufacturer;
+    this.vehicleMake = vehicleMake;
+    this.vehicleModel = vehicleModel;
+    this.vehicleFrame = vehicleFrame;
+    this.vehicleType = vehicleType;
+    this.driveTrain = driveTrain;
+    this.vehicleEngine = vehicleEngine;
+  }
 
-    @Override
-    public void setEngineManufacturer(String manufacturer){
-        vehicleEngine.setEngineManufacturer(manufacturer);
-    }
+  //overriding values from superclass Engine Interface
+  //into the vehicleEngine object of Interface Engine
+  @Override
+  public void setEngineCylinders(int engineCylinders) {
+    vehicleEngine.setEngineCylinders(engineCylinders);
+  }
 
-    @Override
-    public void setEngineMake(String engineMake){
-        vehicleEngine.setEngineMake(engineMake);
-    }
+  @Override
+  public void setEngineManufacturedDate(Date date) {
+    vehicleEngine.setEngineManufacturedDate(date);
+  }
 
-    @Override
-    public void setEngineModel(String engineModel){
-        vehicleEngine.setEngineModel(engineModel);
-        //
-    }
+  @Override
+  public void setEngineManufacturer(String manufacturer) {
+    vehicleEngine.setEngineManufacturer(manufacturer);
+  }
 
-    @Override
-    public void setDriveTrain(String driveTrain){
-        vehicleEngine.setDriveTrain(driveTrain);
-    }
+  @Override
+  public void setEngineMake(String engineMake) {
+    vehicleEngine.setEngineMake(engineMake);
+  }
 
-    @Override
-    public void setEngineType(String fuel){
-        vehicleEngine.setEngineType(fuel);
-    }
+  @Override
+  public void setEngineModel(String engineModel) {
+    vehicleEngine.setEngineModel(engineModel);
+    //
+  }
 
-    @Override
-    public Chassis getChassisType(){
-        return vehicleFrame;
-    }
+  @Override
+  public void setDriveTrain(String driveTrain) {
+    vehicleEngine.setDriveTrain(driveTrain);
+  }
 
-    @Override
-    public void setChassisType (String vehicleChassis){
-        this.vehicleFrame.setChassisType(vehicleChassis);
-    }
+  @Override
+  public void setEngineType(String fuel) {
+    vehicleEngine.setEngineType(fuel);
+  }
 
-    //overloading toString method to include information
-    //regarding Vehicles
-    @Override
-    public String toString(){
-        return "Manufacturer Name: " + vehicleManufacturer + "\n" +
-                "Manufactured Date: " + vehicleManufacturedDate + "\n"+
-                "Vehicle Make: " + vehicleMake + "\n" +
-                "Vehicle Model: " + vehicleModel + "\n" +
-                "Vehicle Type: " + vehicleType + "\n" +
-                //vehicleEngine is an object of Interface Engine
-                //calls to toString method of Interface Engine
-                vehicleEngine.toString();
-    }
+  @Override
+  public Chassis getChassisType() {
+    return vehicleFrame;
+  }
+
+  @Override
+  public void setChassisType(String vehicleChassis) {
+    this.vehicleFrame.setChassisType(vehicleChassis);
+  }
+
+  //overloading toString method to include information
+  //regarding Vehicles
+  @Override
+  public String toString() {
+    return "Manufacturer Name: " + vehicleManufacturer
+        + "\n Manufactured Date: " + vehicleManufacturedDate
+        + "\n Vehicle Make: " + vehicleMake
+        + "\n Vehicle Model: " + vehicleModel
+        + "\n Vehicle Type: " + vehicleType
+        //vehicleEngine is an object of Interface Engine
+        //calls to toString method of Interface Engine
+        + "\n" + vehicleEngine.toString();
+
+
+  }
 }

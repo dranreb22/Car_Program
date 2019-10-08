@@ -3,9 +3,19 @@ package com.dranreb22.car;
 import java.lang.String;
 import java.util.Date;
 
+/**
+ * Main class exists as a driver to test other programs.
+ *
+ * @author Bernard
+ */
 
 public class Main {
 
+  /**
+   * Driver main method to test other classes.
+   *
+   * @param args default String array of main method
+   */
   public static void main(String[] args) {
 
     //testing VehicleChassis class default constructor and overloaded constructor
@@ -48,12 +58,13 @@ public class Main {
         new InteriorFeature("Air Conditioning"),
         new ExteriorFeature("Moonroof")};
 
-    Car car2 = new Car(new Date(1325599999999L),"Honda", "Honda", "Prelude",
-        new VehicleChassis(), "null", "2WD: Two-Wheel Drive", new ManufacturedEngine("Honda", new Date(), "H-Series", "H23A1",
-        4, "88 AKI", "2WD: Two-Wheel Drive"), f, 2);
-      System.out.println(car2);
+    Car car2 = new Car(new Date(1325599999999L), "Honda", "Honda", "Prelude",
+        new VehicleChassis(), "null", "2WD: Two-Wheel Drive",
+        new ManufacturedEngine("Honda", new Date(), "H-Series", "H23A1",
+            4, "88 AKI", "2WD: Two-Wheel Drive"), f, 2);
+    System.out.println(car2);
 
-      Car car3 = new Car();
-      System.out.println(car3);
+    Car car3 = new Car();
+    System.out.println(car3);
   }
 }

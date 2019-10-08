@@ -3,16 +3,17 @@ package com.dranreb22.car;
 //creating class to define InteriorFeature
 public class InteriorFeature implements Feature {
 
-  //initializing String interiorFeature. this can be expanded in the future to define multiple features
+  /*initializing String interiorFeature.
+  this can be expanded in the future to define multiple features*/
   private String interiorFeature;
 
   //default constructor with default value of "Generic"
-  public InteriorFeature() {
+  InteriorFeature() {
     interiorFeature = "Generic";
   }
 
   //overloaded constructor enabling user defined interiorFeature
-  public InteriorFeature(String interiorFeature) {
+  InteriorFeature(String interiorFeature) {
 
     this.interiorFeature = interiorFeature;
   }

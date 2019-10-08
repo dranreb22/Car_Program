@@ -1,43 +1,44 @@
 package com.dranreb22.car;
 
 class VehicleChassis implements Chassis {
-    //creating private object chassisName of class string
-    //to be used later in the class
-    private String chassisName;
 
-    //default constructor that sets chassisNme to equal the value
-    //of the variable chassis, which has the value of "Chassis"
+  //creating private object chassisName of class string
+  //to be used later in the class
+  private String chassisName;
 
-    public VehicleChassis() {
-        this.chassisName = chassis;
-    }
+  //default constructor that sets chassisNme to equal the value
+  //of the variable chassis, which has the value of "Chassis"
 
-    //overloaded constructor allowing Main.java or user to
-    //define chassisName
-    public VehicleChassis(String chassisName) {
+  VehicleChassis() {
+    this.chassisName = chassis;
+  }
 
-        this.chassisName = chassisName;
-    }
+  //overloaded constructor allowing Main.java or user to
+  //define chassisName
+  VehicleChassis(String chassisName) {
 
-    //overriding methods from Interface Chassis
-    @Override
-    public Chassis getChassisType() {
-        //returning an instance of itself?
-        //not sure I fully understand this myself yet but
-        //looking into it
-        return this;
-    }
+    this.chassisName = chassisName;
+  }
 
-    @Override
-    public void setChassisType(String vehicleChassis){
+  //overriding methods from Interface Chassis
+  @Override
+  public Chassis getChassisType() {
+    //returning an instance of itself?
+    //not sure I fully understand this myself yet but
+    //looking into it
+    return this;
+  }
 
-        this.chassisName = vehicleChassis;
-    }
+  @Override
+  public void setChassisType(String vehicleChassis) {
 
-    //overriding this class's default toString method
-    //to print out the chassis name in
-    @Override
-    public String toString(){
-        return "Chassis Name: "+ chassisName;
-    }
+    this.chassisName = vehicleChassis;
+  }
+
+  //overriding this class's default toString method
+  //to print out the chassis name in
+  @Override
+  public String toString() {
+    return "Chassis Name: " + chassisName;
+  }
 }
