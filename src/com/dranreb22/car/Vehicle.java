@@ -7,21 +7,21 @@ public class Vehicle implements Engine, Chassis {
 
   //initializing String, Date, and Chassis
   // variables
-  private Date vehicleManufacturedDate;
-  private String vehicleManufacturer;
-  private String vehicleMake;
-  private String vehicleModel;
-  private Chassis vehicleFrame;
-  private String vehicleType;
+  private final Date vehicleManufacturedDate;
+  private final String vehicleManufacturer;
+  private final String vehicleMake;
+  private final String vehicleModel;
+  private final Chassis vehicleFrame;
+  private final String vehicleType;
   private String driveTrain;
-  private Engine vehicleEngine;
+  private final Engine vehicleEngine;
 
   /**
    * Default constructor.
    */
   //default constructor for Vehicle, providing default values
-  //for nonspecified variables
-  public Vehicle() {
+  //for non-specified variables
+  Vehicle() {
 
     vehicleManufacturedDate = new Date();
     vehicleManufacturer = "Generic";
@@ -29,7 +29,7 @@ public class Vehicle implements Engine, Chassis {
     vehicleModel = "Generic";
     vehicleFrame = new VehicleFrame();
     vehicleType = "Generic";
-    driveTrain = "Generic";
+    //driveTrain = "Generic";
     vehicleEngine = new ManufacturedEngine();
   }
 
@@ -48,7 +48,7 @@ public class Vehicle implements Engine, Chassis {
    */
   //overloaded constructor for Vehicle, allowing user to
   //input chosen values
-  public Vehicle(Date vehicleManufacturedDate, String vehicleManufacturer,
+  Vehicle(Date vehicleManufacturedDate, String vehicleManufacturer,
       String vehicleMake, String vehicleModel, Chassis vehicleFrame,
       String vehicleType, String driveTrain, Engine vehicleEngine) {
     this.vehicleManufacturedDate = vehicleManufacturedDate;
@@ -114,10 +114,10 @@ public class Vehicle implements Engine, Chassis {
   @Override
   public String toString() {
     return "Manufacturer Name: " + vehicleManufacturer
-        + "\n Manufactured Date: " + vehicleManufacturedDate
-        + "\n Vehicle Make: " + vehicleMake
-        + "\n Vehicle Model: " + vehicleModel
-        + "\n Vehicle Type: " + vehicleType
+        + "\nManufactured Date: " + vehicleManufacturedDate
+        + "\nVehicle Make: " + vehicleMake
+        + "\nVehicle Model: " + vehicleModel
+        + "\nVehicle Type: " + vehicleType
         //vehicleEngine is an object of Interface Engine
         //calls to toString method of Interface Engine
         + "\n" + vehicleEngine.toString();

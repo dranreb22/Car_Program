@@ -9,7 +9,7 @@ import java.util.Date;
  * @author Bernard
  */
 
-public class Main {
+class Main {
 
   /**
    * Driver main method to test other classes.

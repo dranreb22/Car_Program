@@ -11,8 +11,8 @@ import java.util.Date;
 
 public class Car extends Vehicle {
 
-  private Feature[] feature;
-  private int carAxle;
+  private final Feature[] feature;
+  private final int carAxle;
 
   /**
    * Car method default constructor.
@@ -39,19 +39,19 @@ public class Car extends Vehicle {
    * @param vehicleType             The type of the vehicle itself
    * @param driveTrain              The type of drive train
    * @param vehicleEngine           From class ManufacturedEngine
-   * @param feature                 From class Feature
-   * @param carAxle                 An integer for the number of axles
+   * @param features                 From class Feature
+   * @param carAxles                 An integer for the number of axles
    */
   public Car(Date vehicleManufacturedDate, String vehicleManufacturer,
       String vehicleMake, String vehicleModel, Chassis vehicleFrame,
       String vehicleType, String driveTrain, ManufacturedEngine vehicleEngine,
-      Feature[] feature, int carAxle) {
+      Feature[] features, int carAxles) {
     super(vehicleManufacturedDate, vehicleManufacturer,
         vehicleMake, vehicleModel, vehicleFrame,
         vehicleType, driveTrain, vehicleEngine);
 
-    this.feature = feature;
-    this.carAxle = carAxle;
+    feature = features;
+    carAxle = carAxles;
   }
 
   /**
@@ -63,7 +63,8 @@ public class Car extends Vehicle {
   public String getExteriorFeatures() {
     String listOfFeatures = "";
 
-    for (int i = 0; i < this.feature.length; i++) {
+    for (Feature f : this.feature) {
+      int i = 0;
       if (this.feature[i] instanceof ExteriorFeature) {
         if (listOfFeatures.length() == 0) {
           listOfFeatures = listOfFeatures + this.feature[i];
@@ -85,10 +86,11 @@ public class Car extends Vehicle {
   public String getInteriorFeatures() {
     String listOfFeatures = "";
 
-    for (int i = 0; i < this.feature.length; i++) {
+    for (Feature f : this.feature) {
+      int i = 0;
       if (this.feature[i] instanceof InteriorFeature) {
         if (listOfFeatures.length() == 0) {
-          listOfFeatures += this.feature[i];
+          listOfFeatures = listOfFeatures + this.feature[i];
         } else {
           listOfFeatures = listOfFeatures + "\n :" + this.feature[i];
         }
@@ -98,7 +100,7 @@ public class Car extends Vehicle {
   }
 
   /**
-   * formats interior features, exterior features, and axles into an overriden toString method.
+   * formats interior features, exterior features, and axles into an overridden toString method.
    *
    * @return listOfFeatures formatted interior features, exterior features, and number of axles
    */
@@ -106,15 +108,16 @@ public class Car extends Vehicle {
   public String toString() {
     String listOfFeatures = "";
 
-    for (int i = 0; i < this.feature.length; i++) {
+    for (Feature f : this.feature) {
+      int i = 0;
       if (listOfFeatures.length() == 0) {
-        listOfFeatures += this.feature[i];
+        listOfFeatures = listOfFeatures + this.feature[i];
       } else {
-        listOfFeatures += "\n \t\t\t\t:\t" + this.feature[i];
+        listOfFeatures = listOfFeatures + "\n \t\t: " + this.feature[i];
       }
     }
     return super.toString() + "\n"
         + "Features: " + listOfFeatures + "\n"
-        + "Car Axle: " + carAxle;
+        + "Car Axle: " + carAxle + "\n";
   }
 }

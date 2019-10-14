@@ -16,6 +16,6 @@ interface Chassis {
   Chassis getChassisType();
 
 
-  //setchassistype accepts a String of vehicleChassis
+  //setChassisType accepts a String of vehicleChassis
   void setChassisType(String vehicleChassis);
 }

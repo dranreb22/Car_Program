@@ -4,7 +4,7 @@ package com.dranreb22.car;
 public class ExteriorFeature implements Feature {
 
   //initializing private String
-  private String exteriorFeature;
+  private final String exteriorFeature;
 
 
   //default constructor with default value of "Generic"

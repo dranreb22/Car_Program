@@ -118,11 +118,11 @@ public class ManufacturedEngine implements Engine {
   @Override
   public String toString() {
     return "Engine Manufacturer: " + engineManufacturer
-        + "\n Engine Manufactured: " + engineManufacturedDate
-        + "\n Engine Make: " + engineMake
-        + "\n Engine Model: " + engineModel
-        + "\n Engine Type: " + engineType
-        + "\n Engine Cylinders: " + engineCylinders
-        + "\n Drive Train: " + driveTrain;
+        + "\nEngine Manufactured: " + engineManufacturedDate
+        + "\nEngine Make: " + engineMake
+        + "\nEngine Model: " + engineModel
+        + "\nEngine Type: " + engineType
+        + "\nEngine Cylinders: " + engineCylinders
+        + "\nDrive Train: " + driveTrain;
   }
 }
