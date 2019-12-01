@@ -3,7 +3,7 @@ package com.dranreb22.car;
 /**
  * Interface Chassis creates a final String chassis and sets the method of setChassisType.
  *
- * @author Bernard
+ * @author Bernard 12/1/2019
  */
 
 //interface definition for the chassis of the car
@@ -16,6 +16,11 @@ interface Chassis {
   Chassis getChassisType();
 
 
+  /**
+   * Enables the user to pass a chassis type.
+   *
+   * @param vehicleChassis The chassis of the vehicle.
+   */
   //setChassisType accepts a String of vehicleChassis
   void setChassisType(String vehicleChassis);
 }

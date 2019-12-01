@@ -1,10 +1,20 @@
 package com.dranreb22.car;
 
-//creating abstract class interface to extend
+/**
+ *Interface that serves as a
+ */
 interface Feature {
 
+  /**
+   *
+   * @return
+   */
   String getFeature();
 
+  /**
+   *
+   * @param feature
+   */
   void setFeature(String feature);
 
 }

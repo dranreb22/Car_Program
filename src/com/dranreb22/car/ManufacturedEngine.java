@@ -2,9 +2,10 @@ package com.dranreb22.car;
 
 import java.util.Date;
 
-/*creating class Manufactured Engine and implementing the interface Engine
-    which has setters from Engine, as well as defining getters for them.
- */
+/**
+ * creating class Manufactured Engine and implementing the interface Engine
+ * which has setters from Engine, as well as defining getters for them.
+*/
 public class ManufacturedEngine implements Engine {
 
   //initializing variables defining different aspects of an Engine
