@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Interface Engine exists to create setter methods for subclasses.
  *
- * @author Bernard
+ * @author Bernard 12/1/2019
  */
 
 //initializing abstract class Engine to define gets and sets

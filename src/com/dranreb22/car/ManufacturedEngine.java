@@ -3,9 +3,9 @@ package com.dranreb22.car;
 import java.util.Date;
 
 /**
- * creating class Manufactured Engine and implementing the interface Engine
- * which has setters from Engine, as well as defining getters for them.
-*/
+ * Creating class Manufactured Engine and implementing the interface Engine which has setters from
+ * Engine, as well as defining getters for them.
+ */
 public class ManufacturedEngine implements Engine {
 
   //initializing variables defining different aspects of an Engine
@@ -54,59 +54,123 @@ public class ManufacturedEngine implements Engine {
   }
 
 
-  //getters and setters for engine attributes. the override is used because
-  //some some of these methods were
+  /**
+   * Getting object's engine manufacturer.
+   *
+   * @return The manufacturer of the engine.
+   */
   public String getEngineManufacturer() {
     return engineManufacturer;
   }
 
 
+  /**
+   * Setting the object's engine manufacturer.
+   *
+   * @param engineManufacturer The manufacturer of the engine.
+   */
   @Override
   public void setEngineManufacturer(String engineManufacturer) {
     this.engineManufacturer = engineManufacturer;
   }
 
+  /**
+   * Getting the date the engine was manufactured.
+   *
+   * @return The date the engine was manufactured.
+   */
   public Date getEngineManufacturedDate() {
     return engineManufacturedDate;
   }
+
+  /**
+   * Set the date the engine was manufactured.
+   *
+   * @param engineManufacturedDate The date the engine was manufactured.
+   */
 
   @Override
   public void setEngineManufacturedDate(Date engineManufacturedDate) {
     this.engineManufacturedDate = engineManufacturedDate;
   }
 
+  /**
+   * Getting the make of the engine.
+   *
+   * @return The make of the engine.
+   */
   public String getEngineMake() {
     return engineMake;
   }
 
+  /**
+   * Setting the make of the engine.
+   *
+   * @param engineMake The make of the engine.
+   */
   public void setEngineMake(String engineMake) {
     this.engineMake = engineMake;
   }
 
+  /**
+   * Getting the model of the engine.
+   *
+   * @return The model of the engine.
+   */
   public String getEngineModel() {
     return engineModel;
   }
 
+  /**
+   * Setting the model of the engine.
+   *
+   * @param engineModel The model of the engine.
+   */
   public void setEngineModel(String engineModel) {
     this.engineModel = engineModel;
   }
 
+  /**
+   * Method for accessing the number of cylinders of the engine.
+   *
+   * @return The number of cylinders in the engine.
+   */
   public int getEngineCylinders() {
     return engineCylinders;
   }
 
+  /**
+   * Sets the number of engine cylinders
+   *
+   * @param engineCylinders The number of engine cylinders.
+   */
   public void setEngineCylinders(int engineCylinders) {
     this.engineCylinders = engineCylinders;
   }
 
+  /**
+   * Method for getting the type of the engine.
+   *
+   * @return The type of the engine.
+   */
   public String getEngineType() {
     return engineType;
   }
 
+  /**
+   * Method for setting the type of the engine.
+   *
+   * @param engineType The type of the engine.
+   */
   public void setEngineType(String engineType) {
     this.engineType = engineType;
   }
 
+  /**
+   * Method for getting the drive train of the engine.
+   *
+   * @return The drive train of the engine.
+   */
   public String getDriveTrain() {
     return driveTrain;
   }
@@ -115,7 +179,11 @@ public class ManufacturedEngine implements Engine {
     this.driveTrain = driveTrain;
   }
 
-  //overriding default toString to print out the information defined in this function
+  /**
+   * Method overriding default toString to print out the information defined in this object.
+   *
+   * @return Formatted to string of the object's fields.
+   */
   @Override
   public String toString() {
     return "Engine Manufacturer: " + engineManufacturer

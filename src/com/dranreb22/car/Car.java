@@ -6,7 +6,7 @@ import java.util.Date;
  * Car class extends Vehicle class and allows parameters to be passed into it. If the class has no
  * parameters passed, then the variables are set to default values instead.
  *
- * @author Bernard 12/2019
+ * @author Bernard 12/1/2019
  */
 
 public class Car extends Vehicle {
@@ -39,8 +39,8 @@ public class Car extends Vehicle {
    * @param vehicleType             The type of the vehicle itself
    * @param driveTrain              The type of drive train
    * @param vehicleEngine           From class ManufacturedEngine
-   * @param features                 From class Feature
-   * @param carAxles                 An integer for the number of axles
+   * @param features                From class Feature
+   * @param carAxles                An integer for the number of axles
    */
   public Car(Date vehicleManufacturedDate, String vehicleManufacturer,
       String vehicleMake, String vehicleModel, Chassis vehicleFrame,

@@ -3,7 +3,7 @@ package com.dranreb22.car;
 /**
  * The class that enables setting and accessing the exterior features of the class.
  *
- * @author Bernard 12/2019
+ * @author Bernard 12/1/2019
  */
 
 public class ExteriorFeature implements Feature {

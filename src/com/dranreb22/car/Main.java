@@ -6,7 +6,7 @@ import java.util.Date;
 /**
  * Main class exists as a driver to test other programs.
  *
- * @author Bernard
+ * @author Bernard 12/1/2019
  */
 
 class Main {
