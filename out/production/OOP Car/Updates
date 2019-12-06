@@ -1,0 +1,20 @@
+9/5/2019 Update to ReadME File:
+Created ReadME file
+If, within this ReadME, a file name has an I in front of it, it's an interface (abstract class)
+Created/Updated the classes and interfaces of Chassis (I), Engine (I), Main, ManufacturedEngine, VehicleChassis, and VehicleFrame.
+So far, I've brushed up on the concept of abstract classes, gone through the creation of constructors, other methods, and overriding previous methods.
+***********************************************************************************************************************************************
+9/6/2019
+Added comments to most, if not all, files. quality of life touch on files, ensuring that they make sense and
+are easily readable.
+Edit: Second commit for the day, ensured that comments accurately described/stated when overloading was being done versus overriding.
+Removed unnecessary semi colons on getters and setters
+***********************************************************************************************************************************************
+9/7/2019
+Moving readme file up to source level as opposed to within the code to make it easier and more accessible for information gathering.
+***********************************************************************************************************************************************
+9/9/2019
+Renaming ReadME to Updates and creating a new ReadME files with appropriate information associated with it. Adding Car class and Editing Vehicle/main classes.
+***********************************************************************************************************************************************
+10/8/2019
+Over last couple of weeks, finished program to practice oop, enabling printing multiple types "cars" and their features.
