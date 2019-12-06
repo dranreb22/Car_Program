@@ -2,7 +2,12 @@ package com.dranreb22.car;
 
 import java.util.Date;
 
-//creating class Vehicle and extending the Engine and chassis interfaces
+/**
+ * Creating class Vehicle and extending the Engine and chassis interfaces
+ *
+ * @author Bernard Georges 12/1/2019
+ */
+
 public class Vehicle implements Engine, Chassis {
 
   //initializing String, Date, and Chassis
@@ -17,10 +22,9 @@ public class Vehicle implements Engine, Chassis {
   private final Engine vehicleEngine;
 
   /**
-   * Default constructor.
+   * Default constructor for Vehicle, providing default values for non-specified variables.
    */
-  //default constructor for Vehicle, providing default values
-  //for non-specified variables
+
   Vehicle() {
 
     vehicleManufacturedDate = new Date();
@@ -46,8 +50,6 @@ public class Vehicle implements Engine, Chassis {
    * @param driveTrain              The type of drive train
    * @param vehicleEngine           From class ManufacturedEngine
    */
-  //overloaded constructor for Vehicle, allowing user to
-  //input chosen values
   Vehicle(Date vehicleManufacturedDate, String vehicleManufacturer,
       String vehicleMake, String vehicleModel, Chassis vehicleFrame,
       String vehicleType, String driveTrain, Engine vehicleEngine) {
@@ -109,8 +111,11 @@ public class Vehicle implements Engine, Chassis {
     this.vehicleFrame.setChassisType(vehicleChassis);
   }
 
-  //overloading toString method to include information
-  //regarding Vehicles
+  /**
+   * Overloading toString method to include information regarding Vehicles.
+   *
+   * @return Formatted information regarding vehicles.
+   */
   @Override
   public String toString() {
     return "Manufacturer Name: " + vehicleManufacturer
